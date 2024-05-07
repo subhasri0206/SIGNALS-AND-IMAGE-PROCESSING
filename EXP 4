@@ -7,7 +7,7 @@ y=y./(1.01*abs(max(y))); %normalizing the signal amplitude from-1.0 to 1.0
 y=y(241:400); % select 20msec segment of the speech signal
 N=160;
 w=hamming(length(N));
-y=y.*w; %multiplying the signal with hamming window
+y=y.*w; %multiplying the signal with hamming windoW
 P=10;
 %autocorrelation
 ycorr=xcorr(y,y);
